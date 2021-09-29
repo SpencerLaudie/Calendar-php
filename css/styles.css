@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+}
+
+.calendar-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: 'Urbanist', sans-serif;
+  flex-grow: 1;
+}
+
+#sidebar {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px 0 0 0;
+}
+
+.accordion {
+  margin: 10px 50px 10px 0;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  font-size: 25px;
+  font-family: 'Urbanist';
+  font-weight: 600;
+  color: #afafaf;
+}
+
+.accordion:hover {
+  color: #8f8f8f;
+}
+
+#calendar {
+  width: 80%;
+  overflow: hidden;
+  height: fit-content;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#calendar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#calendar-month-selectors {
+  display: flex;
+}
+
+#days-of-week,
+#calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+#days-of-week {
+  text-align: center;
+}
+
+.day-of-week {
+  height: 30px
+}
+
+.calendar-day {
+  min-height: 125px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.off-month {
+  background-color: #efefef;
+}
+
+.dayNum {
+  font-family: 'Azeret Mono', sans-serif;
+  align-self: flex-end;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+#inputs {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputs div {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+label {
+  margin-right: 20px;
+  font-size: inherit;
+}
+
+.input {
+  width: 200px;
+  font-size: inherit;
+}
+
+
+input:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+
+.input-text {
+  font-size: inherit;
+  color: inherit;
+  border: 0px solid #fff;
+  border-bottom: 1px solid #a5a5a5;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* p {
+  width: 200px;
+  font-size: inherit;
+  color: inherit;
+  border: 0px solid #fff;
+  font-family: inherit;
+  font-weight: inherit;
+} */
+
+#bad-pw {
+  color: #F44336;
+  font-size: 12px;
+  font-family: inherit;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 800;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #F44336;
+  color: white;
+}
+
+button:hover {
+  background-color: #BA000D;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

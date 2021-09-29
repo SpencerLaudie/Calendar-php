@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400;500;600;700;800;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/scripts.js" charset="utf-8"></script>
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div class="calendar-container">
+      <div id="calendar">
+
+        <div id="calendar-header">
+          <div id="selected-month"></div>
+          <div id="calendar-month-selectors">
+            <div id="prev-month-selector"><img src="https://img.icons8.com/material-outlined/30/000000/back--v1.png"/></div>
+            <div id="next-month-selector"><img src="https://img.icons8.com/material-rounded/30/000000/forward.png"/></div>
+          </div>
+        </div>
+
+        <div id="days-of-week"></div>
+        <div id="calendar-days"></div>
+
+      </div>
+    </div>
+
+    <div id="sidebar" >
+      <div id="login-btn" class="accordion">Login</div>
+      <div id='login-panel' class="panel">
+        <div id='login-box' class="box" autocomplete='off'>
+          <input autocomplete='off' name='hidden' type='text' style='display:none;'>
+          <div id='inputs'>
+            <div>
+              <label for='username'>Username</label>
+              <input id='login-un' class='input-text input' type='text' name='username' required>
+            </div>
+            <div>
+              <label for='password'>Password</label>
+              <input id='login-pw' class='input-text input' type='password' minlength='8' name='password' required>
+            </div>
+          </div>
+          <button type='' onclick="login()">Login</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
