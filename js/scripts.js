@@ -182,7 +182,7 @@ function login(event) {
       initAccordion();
     }
   };
-  xhttp.open("GET", "/php/login.php?un="+un+"&pw="+pw, true);
+  xhttp.open("GET", "php/login.php?un="+un+"&pw="+pw, true);
   xhttp.send();
 
 
@@ -201,6 +201,6 @@ function makeEvent() {
       createCalendar();
     }
   };
-  xhttp.open("GET", "/php/create_event.php?un="+$('#username').text()+"&desc="+desc+"&d="+date+" "+time, true);
+  xhttp.open("GET", "php/create_event.php?un="+$('#username').text()+"&desc="+desc+"&d="+date+" "+time, true);
   xhttp.send();
 }
