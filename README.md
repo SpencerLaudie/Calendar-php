@@ -1,2 +1,2 @@
 # Calendar
-A calendar web app
+A calendar web app (not yet published online)
